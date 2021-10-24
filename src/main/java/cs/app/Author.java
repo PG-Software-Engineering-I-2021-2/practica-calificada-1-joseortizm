@@ -2,9 +2,9 @@ package cs.app;
 
 public class Author {
     String name;
-    int birth;
+    String birth;
 
-    Author(String name,int birth){
+    Author(String name,String birth){
         this.name = name;
         this.birth = birth;
     }
@@ -13,7 +13,7 @@ public class Author {
         return name;
     }
 
-    int getBirthA(){
+    String getBirthA(){
         return birth;
     }
 
