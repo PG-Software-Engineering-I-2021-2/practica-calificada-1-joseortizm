@@ -5,17 +5,17 @@ public class Prueba1 {
     double consumoCombustible;
     double capacidadTanque;
 
-<span class="nc" id="L8">    Prueba1(double cantidadCombustible,double consumoCombustible,double capacidadTanque){</span>
-<span class="nc" id="L9">        this.cantidadCombustible = cantidadCombustible;</span>
-<span class="nc" id="L10">        this.consumoCombustible = consumoCombustible;</span>
-<span class="nc" id="L11">        this.capacidadTanque = capacidadTanque;</span>
-<span class="nc" id="L12">    }</span>
+<span class="fc" id="L8">    Prueba1(double cantidadCombustible,double consumoCombustible,double capacidadTanque){</span>
+<span class="fc" id="L9">        this.cantidadCombustible = cantidadCombustible;</span>
+<span class="fc" id="L10">        this.consumoCombustible = consumoCombustible;</span>
+<span class="fc" id="L11">        this.capacidadTanque = capacidadTanque;</span>
+<span class="fc" id="L12">    }</span>
 
 
     String rebastecer(double litros){
-<span class="nc" id="L16">        double espacioLibre = this.capacidadTanque - this.cantidadCombustible;</span>
-<span class="nc bnc" id="L17" title="All 2 branches missed.">        if (litros &gt; espacioLibre){</span>
-<span class="nc" id="L18">            return &quot;Vehiculo no se puede reabastecer el tanque, esta lleno.&quot;;</span>
+<span class="fc" id="L16">        double espacioLibre = this.capacidadTanque - this.cantidadCombustible;</span>
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">        if (litros &gt; espacioLibre){</span>
+<span class="fc" id="L18">            return &quot;Vehiculo no se puede reabastecer el tanque, esta lleno.&quot;;</span>
         }
         else{
 <span class="nc" id="L21">            this.cantidadCombustible += (litros * 0.95);</span>
@@ -26,13 +26,13 @@ public class Prueba1 {
 
 
     String manejar(double km) {
-<span class="nc" id="L29">        double combustibleRequiere = km*this.consumoCombustible;</span>
-<span class="nc bnc" id="L30" title="All 2 branches missed.">        if(cantidadCombustible-combustibleRequiere&lt;0){</span>
+<span class="fc" id="L29">        double combustibleRequiere = km*this.consumoCombustible;</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        if(cantidadCombustible-combustibleRequiere&lt;0){</span>
 <span class="nc" id="L31">            return &quot;Vehiculo necesita reabastecimiento de combustible.&quot;;</span>
         }
         else{
-<span class="nc" id="L34">            this.cantidadCombustible -=combustibleRequiere;</span>
-<span class="nc" id="L35">            return (&quot;Vehiculo viajó &quot; +(km)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidadCombustible)+ &quot; de combustible&quot;);</span>
+<span class="fc" id="L34">            this.cantidadCombustible -=combustibleRequiere;</span>
+<span class="fc" id="L35">            return (&quot;Vehiculo viajó &quot; +(km)+&quot; km y aún tiene &quot; +String.format(&quot;%.2f&quot;,cantidadCombustible)+ &quot; de combustible&quot;);</span>
         }
     }
 

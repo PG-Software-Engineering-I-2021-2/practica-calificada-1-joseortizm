@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-cs_app_AppTest" class="hide-methods passed suite-cs_app_AppTest"> (hide)</a> <!-- hide-methods passed suite-cs_app_AppTest -->
+                      <a href="#" panel-name="suite-cs_app_AppTest" class="show-methods passed suite-cs_app_AppTest"> (show)</a> <!-- show-methods passed suite-cs_app_AppTest -->
+                    </span>
+                    <div class="method-list-content passed suite-cs_app_AppTest">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-cs_app_AppTest" title="cs.app.AppTest" class="method navigator-link" hash-for-method="test01">test01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-cs_app_AppTest" title="cs.app.AppTest" class="method navigator-link" hash-for-method="test02">test02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-cs_app_AppTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -105,6 +124,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-cs_app_AppTest" class="panel cs_app_AppTest">
+          <div class="suite-cs_app_AppTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">cs.app.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test01">
+                  </a> <!-- test01 -->
+                  <span class="method-name">test01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test02">
+                  </a> <!-- test02 -->
+                  <span class="method-name">test02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-cs_app_AppTest-class-passed -->
         </div> <!-- panel cs_app_AppTest -->
         <div panel-name="test-xml-cs_app_AppTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -156,12 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test01')
+data.setCell(0, 2, 'cs.app.AppTest')
+data.setCell(0, 3, 30);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test02')
+data.setCell(1, 2, 'cs.app.AppTest')
+data.setCell(1, 3, 14);
 window.suiteTableData['cs_app_AppTest']= { tableData: data, tableDiv: 'times-div-cs_app_AppTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 44 ms</span>
               <div id="times-div-cs_app_AppTest">
               </div> <!-- times-div-cs_app_AppTest -->
             </div> <!-- times-div -->
@@ -186,6 +235,16 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">cs.app.AppTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test01</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test02</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

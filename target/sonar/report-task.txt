@@ -1,0 +1,7 @@
+organization=pg-software-engineering-i-2021-2
+projectKey=org.example:practica-calificada-1-joseortizm
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.24170
+dashboardUrl=https://sonarcloud.io/dashboard?id=org.example%3Apractica-calificada-1-joseortizm
+ceTaskId=AXyvL4LAwZ3Yf-kSW023
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXyvL4LAwZ3Yf-kSW023
