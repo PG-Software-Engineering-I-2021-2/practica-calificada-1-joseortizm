@@ -7,34 +7,21 @@ import org.testng.annotations.Test;
 import static cs.app.App.*;
 
 public class AppTest {
-    @Test
-    public void test01(){
-        Libros libroa = new Libros("El quijote", "1980", "Miguel de cervantes");
-        //logger.info(libroa.getName());
-        Assert.assertEquals(libroa.getName(),"El quijote");
+    @Test public void test01(){
+        var agenteTest = Oliver.getInstance();
+
+        Author autor = new Author("Somerville","1-1-1956");
+
+        agenteTest.agregarLibro(1, "Software Engineering", "1990", autor.getNameA(), 1);
+        agenteTest.agregarLibro(2, "Software Engineering", "2000", autor.getNameA(), 1);
+        agenteTest.agregarLibro(3, "Software Engineering", "2021", autor.getNameA(), 1);
+
+        agenteTest.agregarOferta(3, "primavera", "computer science");
+
+        agenteTest.agregarEstudiante(1, "jose", 991295044);
+        Assert.assertTrue(agenteTest.checkDisponibilidadLibro(1, 1));
+        agenteTest.reducirCantidadLibro(1, 1);
 
     }
-
-    @Test
-    public void test02(){
-        Libros librob = new Libros("Mio Cid", "1500", "Anonimo");
-
-        //logger.info(librob.getName());
-        Assert.assertEquals(librob.getName(),"Mio Cid");
     }
-
-    @Test
-    public void test03(){
-        Libros libroc = new Libros("Tres reyes", "1300", "Miguel angel");
-        //logger.info(libroc.getName());
-        Assert.assertEquals(libroc.getName(),"Tres reyes");
-    }
-
-    @Test
-    public void test04(){
-        Libros librod = new Libros("Divina comedia", "1800", "Ruben dario");
-        //logger.info(librod.getYear());
-       Assert.assertEquals(librod.getYear(),"1800");
-    }
-
 }

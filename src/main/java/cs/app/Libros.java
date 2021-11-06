@@ -1,14 +1,16 @@
 package cs.app;
 
 public class Libros {
-    String name;
-    String year;
-    String  author;
+    private final String name;
+    private final String year;
+    private final String  author;
+    private Integer stock;
 
-    public Libros(String name,String year, String  author){
+    public Libros(String name,String year, String  author, Integer stock){
         this.name = name;
         this.year = year;
         this.author = author;
+        this.stock = stock;
     }
 
     public String getName(){
@@ -23,5 +25,36 @@ public class Libros {
         return author;
     }
 
+    public Integer getStock() {return stock;}
+
+    public Integer addStock(Integer stock){
+        this.stock = this.stock + stock;
+        return this.stock;
+    }
+
+    public Integer reduceStock(Integer stock){
+        this.stock = this.stock - stock; //ver si es posible agregar if
+        return this.stock;
+    }
+
+    public Boolean checkStock(Integer stock){
+        int status;
+        status = this.stock - stock;
+        if(status >= 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 }
+
+
+
+
+
+
+
+
+

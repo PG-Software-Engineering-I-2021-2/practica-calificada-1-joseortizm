@@ -1,19 +1,19 @@
 package cs.app;
 
 public class Author {
-    String name;
-    String birth;
+    private final String name;
+     private final String birth;
 
-    Author(String name,String birth){
+    public Author(String name,String birth){
         this.name = name;
         this.birth = birth;
     }
 
-    String getNameA(){
+    public String getNameA(){
         return name;
     }
 
-    String getBirthA(){
+    public String getBirthA(){
         return birth;
     }
 

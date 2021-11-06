@@ -2,10 +2,10 @@
 
 public class Libros {
     String name;
-    int year;
+    String year;
     String  author;
 
-<span class="fc" id="L8">    public Libros(String name,int year, String  author){</span>
+<span class="fc" id="L8">    public Libros(String name,String year, String  author){</span>
 <span class="fc" id="L9">        this.name = name;</span>
 <span class="fc" id="L10">        this.year = year;</span>
 <span class="fc" id="L11">        this.author = author;</span>
@@ -15,8 +15,8 @@ public class Libros {
 <span class="fc" id="L15">    return name;</span>
     }
 
-    public int getYear(){
-<span class="nc" id="L19">        return year;</span>
+    public String getYear(){
+<span class="fc" id="L19">        return year;</span>
     }
 
     public String getAuthor(){

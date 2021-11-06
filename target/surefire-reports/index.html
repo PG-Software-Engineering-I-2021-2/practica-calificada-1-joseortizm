@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,6 +110,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-cs_app_AppTest" title="cs.app.AppTest" class="method navigator-link" hash-for-method="test02">test02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-cs_app_AppTest" title="cs.app.AppTest" class="method navigator-link" hash-for-method="test03">test03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-cs_app_AppTest" title="cs.app.AppTest" class="method navigator-link" hash-for-method="test04">test04</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-cs_app_AppTest -->
@@ -142,6 +152,20 @@
                   <a name="test02">
                   </a> <!-- test02 -->
                   <span class="method-name">test02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03">
+                  </a> <!-- test03 -->
+                  <span class="method-name">test03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test04">
+                  </a> <!-- test04 -->
+                  <span class="method-name">test04</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,15 +221,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test01')
 data.setCell(0, 2, 'cs.app.AppTest')
-data.setCell(0, 3, 17);
+data.setCell(0, 3, 16);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test02')
 data.setCell(1, 2, 'cs.app.AppTest')
 data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test03')
+data.setCell(2, 2, 'cs.app.AppTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test04')
+data.setCell(3, 2, 'cs.app.AppTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['cs_app_AppTest']= { tableData: data, tableDiv: 'times-div-cs_app_AppTest'}
 return data;
 }
@@ -243,6 +275,14 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test02</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test03</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test04</span>
                 <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

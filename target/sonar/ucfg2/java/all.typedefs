@@ -162,17 +162,17 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 checkIndex(II) java.lang.String#checkIndex(II)VX
 !<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
 value()java.lang.String#value()[B`
-%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Z«
+%regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zß
 cs.app.Librosjava.lang.Object6
-	getName())cs.app.Libros#getName()Ljava/lang/String;:
-getAuthor()+cs.app.Libros#getAuthor()Ljava/lang/String;%
-	getYear()cs.app.Libros#getYear()Im
--<init>(Ljava/lang/String;ILjava/lang/String;)<cs.app.Libros#<init>(Ljava/lang/String;ILjava/lang/String;)VÑ
-cs.app.Authorjava.lang.ObjectI
-<init>(Ljava/lang/String;I)*cs.app.Author#<init>(Ljava/lang/String;I)V8
+	getName())cs.app.Libros#getName()Ljava/lang/String;
+><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Mcs.app.Libros#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V:
+getAuthor()+cs.app.Libros#getAuthor()Ljava/lang/String;6
+	getYear())cs.app.Libros#getYear()Ljava/lang/String;„
+cs.app.Authorjava.lang.Objectk
+,<init>(Ljava/lang/String;Ljava/lang/String;);cs.app.Author#<init>(Ljava/lang/String;Ljava/lang/String;)V8
 
-getNameA()*cs.app.Author#getNameA()Ljava/lang/String;)
-getBirthA()cs.app.Author#getBirthA()I„
+getNameA()*cs.app.Author#getNameA()Ljava/lang/String;:
+getBirthA()+cs.app.Author#getBirthA()Ljava/lang/String;„
 
 cs.app.Appjava.lang.Object 
 <init>()cs.app.App#<init>()VB
